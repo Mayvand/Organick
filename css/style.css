@@ -155,13 +155,16 @@
   max-width: 1380px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
   margin: 0 auto;
-  flex: 1 1;
 }
 .container main .offers .offers__container .offers__item {
-  width: 665px;
+  max-width: 665px;
+  min-width: 450px;
   padding: 105px 0 105px 55px;
+  flex-grow: 1;
+  border-radius: 30px;
 }
 .container main .offers .offers__container .offers__item .offers__subtitle {
   font-family: Yellowtail;
@@ -201,12 +204,15 @@
 .container main .about {
   padding: 130px 30px 140px 30px;
   display: flex;
+  justify-content: center;
   gap: 30px;
   background-color: #f9f8f8;
+  flex-wrap: wrap;
 }
 .container main .about .about__img {
   background: url(../img/features_img.png) no-repeat;
   background-size: cover;
+  background-position: center;
   width: 675px;
 }
 .container main .about .about__content {
@@ -333,7 +339,7 @@
 }
 .container main .products__gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -477,6 +483,7 @@
   display: flex;
   gap: 26px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .container main .reviews .reviews__circles .circles__item {
   height: 250px;
@@ -613,7 +620,9 @@
 }
 .container main .categories .categories__gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .container main .categories .categories__gallery .categories__item:nth-of-type(1) {
   background: url(../img/Categories1.png) no-repeat;
@@ -668,6 +677,8 @@
 }
 .container main .subscribe .subscribe__content .subscribe__form {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .container main .subscribe .subscribe__content .subscribe__form .subscribe__input {
@@ -796,6 +807,37 @@
   height: 45vw;
 }
 
+@media screen and (max-width: 1440px) {
+  .container main .promo .promo__container {
+    padding: 220px 30px 250px 30px;
+  }
+  .container main .offers {
+    padding: 140px 30px;
+  }
+  .container main .about .about__content .about__subtitle,
+  .container main .about .about__content .about__title,
+  .container main .about .about__content .about__text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .container main .about .about__content .about__button {
+    margin: 45px auto 0 auto;
+  }
+  .container main .about .about__img {
+    height: 505px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container main .subscribe .subscribe__content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container main .subscribe .subscribe__content .subscribe__title {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1040px) {
   .container .header {
     padding-right: 100px;

@@ -184,13 +184,16 @@ $accent-color: #7eb693;
 				max-width: 1380px;
 				display: flex;
 				justify-content: center;
+				flex-wrap: wrap;
 				gap: 50px;
 				margin: 0 auto;
-				flex: 1 1;
 
 				.offers__item {
-					width: 665px;
+					max-width: 665px;
+					min-width: 450px;
 					padding: 105px 0 105px 55px;
+					flex-grow: 1;
+					border-radius: 30px;
 
 					.offers__subtitle {
 						font-family: Yellowtail;
@@ -240,12 +243,15 @@ $accent-color: #7eb693;
 		.about {
 			padding: 130px 30px 140px 30px;
 			display: flex;
+			justify-content: center;
 			gap: 30px;
 			background-color: #f9f8f8;
+			flex-wrap: wrap;
 
 			.about__img {
 				background: url(../img/features_img.png) no-repeat;
 				background-size: cover;
+				background-position: center;
 				width: 675px;
 			}
 
@@ -392,7 +398,7 @@ $accent-color: #7eb693;
 
 		.products__gallery {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			gap: 20px;
 			flex-wrap: wrap;
 			margin-top: 40px;
@@ -551,6 +557,7 @@ $accent-color: #7eb693;
 				display: flex;
 				gap: 26px;
 				justify-content: center;
+				flex-wrap: wrap;
 
 				.circles__item {
 					height: 250px;
@@ -705,7 +712,9 @@ $accent-color: #7eb693;
 
 			.categories__gallery {
 				display: flex;
-				justify-content: space-between;
+				justify-content: center;
+				gap: 30px;
+				flex-wrap: wrap;
 
 				.categories__item:nth-of-type(1) {
 					background: url(../img/Categories1.png) no-repeat;
@@ -768,6 +777,8 @@ $accent-color: #7eb693;
 
 				.subscribe__form {
 					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
 					gap: 10px;
 
 					.subscribe__input {
