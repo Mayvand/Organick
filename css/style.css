@@ -827,6 +827,47 @@
     height: 505px;
   }
 }
+@media screen and (max-width: 1330px) {
+  .container main .footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container main .footer .footer__contact {
+    order: 1;
+  }
+  .container main .footer .footer__contact p {
+    text-align: center;
+  }
+  .container main .footer .footer__contact h2 {
+    text-align: center;
+  }
+  .container main .footer .footer__contact .footer__subtitle {
+    text-align: center;
+  }
+  .container main .footer .footer__utility {
+    order: 1;
+  }
+  .container main .footer .footer__contact,
+  .container main .footer .footer__utility {
+    text-align: center;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    padding: 0 40px;
+    width: 45%;
+    min-width: 300px;
+  }
+  .container main .footer .footer__about {
+    order: 0;
+    flex-basis: auto;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    max-width: none;
+    border: none;
+  }
+  .container main .footer .footer__about .footer__text {
+    margin: 44px auto 0 auto;
+  }
+}
 @media screen and (max-width: 1100px) {
   .container main .subscribe .subscribe__content {
     justify-content: center;
@@ -912,5 +953,47 @@
   }
   .container .header .header__nav nav ul li .header__link:hover {
     color: #7eb693;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container main .promo {
+    background: #f2f0f1;
+  }
+  .container main .promo .promo__container .promo__subtitle,
+  .container main .promo .promo__container .promo__title,
+  .container main .promo .promo__container .promo__button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container main .promo .promo__container .promo__title {
+    max-width: 700px;
+  }
+  .container main .offer .offer__head {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container main .offer .offer__head .offer__titles {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container main .offer .offer__head .offer__button {
+    margin: 0 auto;
+  }
+  .container main .eco {
+    padding: 40px 60px;
+    background-size: cover;
+  }
+  .container main .eco .eco__content {
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+  .container main .eco .eco__content .eco__subtitle,
+  .container main .eco .eco__content .eco__title {
+    text-align: center;
+    max-width: none;
+  }
+  .container main .eco .eco__content .eco__text .eco__text-title {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
