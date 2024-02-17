@@ -694,7 +694,15 @@
   letter-spacing: 0.02em;
   color: #274c5b;
 }
-.container main .subscribe .subscribe__content .subscribe__form .subscribe__input::-webkit-input-placeholder {
+.container main .subscribe .subscribe__content .subscribe__form .subscribe__input::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #525c60;
+  vertical-align: middle;
+}
+.container main .subscribe .subscribe__content .subscribe__form .subscribe__input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -873,6 +881,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    border-radius: 60px;
   }
   .container main .subscribe .subscribe__content .subscribe__title {
     max-width: 100%;
@@ -995,5 +1004,132 @@
   }
   .container main .eco .eco__content .eco__text .eco__text-title {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 866px) {
+  .container main .promo .promo__container {
+    padding: 220px 60px 250px 60px;
+  }
+  .container main .promo .promo__container .promo__title {
+    font-size: 56px;
+  }
+  .container main .offers {
+    padding: 140px 60px;
+  }
+  .container main .about {
+    padding: 130px 60px;
+  }
+  .container main .about .about__content .about__features .features__item .features__text {
+    max-width: none;
+    flex: 1;
+  }
+  .container main .reviews {
+    background: rgba(184, 184, 184, 0.1960784314);
+    padding: 130px 60px;
+  }
+  .container main .offer {
+    padding: 160px 60px;
+  }
+  .container main .subscribe {
+    padding: 30px 60px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container main .footer .footer__contact,
+  .container main .footer .footer__utility {
+    width: 85%;
+  }
+  .container main .products__gallery .products__item .products__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .container .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px;
+  }
+  .container .header .header__nav {
+    max-width: none;
+  }
+  .container .header .header__nav nav ul {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .container main .promo .promo__container {
+    padding: 120px 60px;
+  }
+  .container main .offers {
+    padding: 100px 60px;
+  }
+  .container main .offers .offers__container .offers__item .offers__text {
+    font-size: 32px;
+    max-width: 190px;
+    letter-spacing: -1.86px;
+  }
+  .container main .about .about__content .about__title {
+    font-size: 36px;
+  }
+  .container main .about .about__content .about__text {
+    font-size: 16px;
+  }
+  .container main .about .about__content .about__features .features__item .features__paragraph {
+    font-size: 16px;
+  }
+  .container main .products__gallery .products__item .item__name {
+    text-align: center;
+  }
+  .container main .products__gallery .products__item .item__price {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container main .products__gallery .products__item .item__price .price__left {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .container main .reviews {
+    padding: 90px 60px;
+  }
+  .container main .reviews .reviews__title {
+    font-size: 36px;
+  }
+  .container main .offer {
+    padding: 90px 60px;
+  }
+  .container main .offer .offer__head .offer__title {
+    font-size: 36px;
+  }
+  .container main .eco .eco__content .eco__title {
+    font-size: 36px;
+  }
+  .container main .eco .eco__content .eco__text .eco__text-text {
+    font-size: 15px;
+  }
+  .container main .categories {
+    padding: 40px 65px;
+  }
+  .container main .categories .categories__gallery .categories__item {
+    max-width: 460px;
+  }
+  .container main .subscribe .subscribe__content {
+    padding: 70px 40px;
+  }
+  .container main .subscribe .subscribe__content .subscribe__title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 36px;
+  }
+  .container main .subscribe .subscribe__content .subscribe__form .subscribe__input {
+    width: 100%;
+    font-size: 0.1em;
+  }
+  .container main .subscribe .subscribe__content .subscribe__form .subscribe__input .subscribe__input::-moz-placeholder {
+    font-size: 1em;
+  }
+  .container main .subscribe .subscribe__content .subscribe__form .subscribe__input .subscribe__input::placeholder {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

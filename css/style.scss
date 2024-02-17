@@ -795,13 +795,12 @@ $accent-color: #7eb693;
 						color: $text-color;
 					}
 
-					.subscribe__input::-webkit-input-placeholder {
+					.subscribe__input::placeholder {
 						font-family: 'Open Sans', sans-serif;
 						font-weight: 400;
 						font-size: 18px;
 						letter-spacing: 0.02em;
 						color: #525c60;
-						// line-height: 5px;
 						vertical-align: middle;
 					}
 
