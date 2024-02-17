@@ -350,11 +350,20 @@
 
 				.offers__container {
 					.offers__item {
+						padding: 20px;
+						text-align: center;
+						min-width: 100%;
 						.offers__text {
-							font-size: 32px;
-							max-width: 190px;
-							letter-spacing: -1.86px;
+							max-width: none;
+							width: 100%;
 						}
+					}
+
+					.offers__natural {
+						background: #f96893;
+					}
+					.offers__offer {
+						background: #e8edf0;
 					}
 				}
 			}
@@ -449,6 +458,65 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.container {
+		main {
+			.about {
+				.about__content {
+					.about__features {
+						margin-top: 30px;
+						.features__item {
+							flex-direction: column;
+							.features__text {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+
+			.products {
+				padding: 60px;
+			}
+
+			.eco {
+				padding: 40px 0;
+				.eco__content {
+					background-color: #ffffff5d;
+					backdrop-filter: blur(10px);
+					border-radius: 0;
+					padding: 40px 60px;
+				}
+			}
+
+			.categories {
+				.categories__gallery {
+					.categories__item {
+						.categories__link {
+							padding: 30px;
+						}
+					}
+				}
+			}
+
+			.subscribe {
+				padding: 40px 0;
+				.subscribe__content {
+					border-radius: 0;
+					background: #48bce5;
+				}
+			}
+
+			.footer {
+				.footer__about {
+					padding: 10px 20px;
+					width: 85%;
 				}
 			}
 		}

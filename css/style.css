@@ -1065,10 +1065,20 @@
   .container main .offers {
     padding: 100px 60px;
   }
+  .container main .offers .offers__container .offers__item {
+    padding: 20px;
+    text-align: center;
+    min-width: 100%;
+  }
   .container main .offers .offers__container .offers__item .offers__text {
-    font-size: 32px;
-    max-width: 190px;
-    letter-spacing: -1.86px;
+    max-width: none;
+    width: 100%;
+  }
+  .container main .offers .offers__container .offers__natural {
+    background: #f96893;
+  }
+  .container main .offers .offers__container .offers__offer {
+    background: #e8edf0;
   }
   .container main .about .about__content .about__title {
     font-size: 36px;
@@ -1131,5 +1141,43 @@
   }
   .container main .subscribe .subscribe__content .subscribe__form .subscribe__input .subscribe__input::placeholder {
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 465px) {
+  .container main .about .about__content .about__features {
+    margin-top: 30px;
+  }
+  .container main .about .about__content .about__features .features__item {
+    flex-direction: column;
+  }
+  .container main .about .about__content .about__features .features__item .features__text {
+    text-align: center;
+  }
+  .container main .products {
+    padding: 60px;
+  }
+  .container main .eco {
+    padding: 40px 0;
+  }
+  .container main .eco .eco__content {
+    background-color: rgba(255, 255, 255, 0.3647058824);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 0;
+    padding: 40px 60px;
+  }
+  .container main .categories .categories__gallery .categories__item .categories__link {
+    padding: 30px;
+  }
+  .container main .subscribe {
+    padding: 40px 0;
+  }
+  .container main .subscribe .subscribe__content {
+    border-radius: 0;
+    background: #48bce5;
+  }
+  .container main .footer .footer__about {
+    padding: 10px 20px;
+    width: 85%;
   }
 }/*# sourceMappingURL=style.css.map */
