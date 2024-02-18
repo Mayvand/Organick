@@ -442,17 +442,17 @@
 			}
 			.subscribe {
 				.subscribe__content {
-					padding: 70px 40px;
+					padding: 70px 49px;
 					.subscribe__title {
 						max-width: 100%;
 						text-align: center;
-						font-size: 36px;
+						font-size: 32px;
 					}
 
 					.subscribe__form {
 						.subscribe__input {
 							width: 100%;
-							font-size: 0.1em;
+							padding-left: 10px;
 							.subscribe__input::placeholder {
 								font-size: 1em;
 							}
@@ -466,7 +466,33 @@
 
 @media screen and (max-width: 465px) {
 	.container {
+		.header {
+			.header__nav {
+				.burger {
+					right: 10px;
+				}
+			}
+		}
 		main {
+			.promo {
+				.promo__container {
+					.promo__title {
+						font-size: 36px;
+						line-height: 50px;
+					}
+				}
+			}
+
+			.offers {
+				.offers__container {
+					.offers__item {
+						.offers__text {
+							font-size: 28px;
+						}
+					}
+				}
+			}
+
 			.about {
 				.about__content {
 					.about__features {
@@ -485,10 +511,18 @@
 				padding: 60px;
 			}
 
+			.products__gallery {
+				.products__item .item__price .price__left .strike__price,
+				.products__item .item__price .price__left .price {
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+
 			.eco {
 				padding: 40px 0;
 				.eco__content {
-					background-color: #ffffff5d;
+					background-color: #ffffff9f;
 					backdrop-filter: blur(10px);
 					border-radius: 0;
 					padding: 40px 60px;
@@ -516,8 +550,65 @@
 			.footer {
 				.footer__about {
 					padding: 10px 20px;
-					width: 85%;
+					width: 100%;
+					.footer__icons {
+						display: grid;
+						grid-template-columns: repeat(2, 80px);
+						align-items: center;
+						justify-items: center;
+						margin-top: 20px;
+						grid-gap: 20px;
+					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		main {
+			.categories {
+				.categories__gallery {
+					.categories__item {
+						height: 300px;
+						background-size: contain;
+						.categories__link {
+							padding: 20px;
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.reviews {
+				padding: 60px;
+				.reviews__author-role {
+					padding-bottom: 20px;
+				}
+				.reviews__circles {
+					margin-top: 20px;
+					.circles__item {
+						height: 200px;
+						width: 200px;
+					}
+				}
+			}
+			.footer {
+				padding: 80px 50px;
+				.footer__contact,
+				.footer__utility {
+					min-width: auto;
+					padding: 0;
+					border: none;
+				}
+				.footer__about {
+					padding: 10px 10px;
+					width: 100%;
+				}
+			}
+
+			.footer .footer__text {
+				font-size: 17px;
 			}
 		}
 	}
