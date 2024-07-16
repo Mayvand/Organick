@@ -109,8 +109,9 @@
 .container main .promo .promo__container {
   max-width: 1380px;
   margin: 0 auto;
-  padding-top: 220px;
+  padding-top: 200px;
   padding-bottom: 250px;
+  will-change: transform;
 }
 .container main .promo .promo__container .promo__subtitle {
   color: #7eb693;
@@ -121,6 +122,7 @@
   line-height: 64.8px;
   letter-spacing: 0.36px;
   text-transform: capitalize;
+  will-change: transform;
 }
 .container main .promo .promo__container .promo__title {
   margin-top: 14px;
@@ -132,10 +134,12 @@
   line-height: 84px;
   letter-spacing: 0.36px;
   max-width: 496px;
+  will-change: transform;
 }
 .container main .promo .promo__container .promo__button {
   background-color: #efd372;
   margin-top: 55px;
+  will-change: transform;
 }
 .container main .promo .promo__container .promo__button a {
   color: #274c5b;
@@ -564,7 +568,7 @@
   text-transform: capitalize;
 }
 .container main .eco {
-  padding: 40px 60px 40px 0;
+  padding: 40px 140px 40px 0;
   background: url(../img/Eco__bg.png) no-repeat;
   background-position: left;
 }
@@ -809,6 +813,7 @@
 }
 .container main .map {
   max-width: 1440px;
+  margin: 0 auto;
 }
 .container main .map iframe {
   width: 100%;

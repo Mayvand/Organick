@@ -132,8 +132,9 @@ $accent-color: #7eb693;
 			.promo__container {
 				max-width: 1380px;
 				margin: 0 auto;
-				padding-top: 220px;
+				padding-top: 200px;
 				padding-bottom: 250px;
+				will-change: transform;
 
 				.promo__subtitle {
 					color: $accent-color;
@@ -144,6 +145,7 @@ $accent-color: #7eb693;
 					line-height: 64.8px;
 					letter-spacing: 0.36px;
 					text-transform: capitalize;
+					will-change: transform;
 				}
 
 				.promo__title {
@@ -156,11 +158,13 @@ $accent-color: #7eb693;
 					line-height: 84px;
 					letter-spacing: 0.36px;
 					max-width: 496px;
+					will-change: transform;
 				}
 
 				.promo__button {
 					background-color: #efd372;
 					margin-top: 55px;
+					will-change: transform;
 
 					a {
 						color: $text-color;
@@ -649,9 +653,11 @@ $accent-color: #7eb693;
 		}
 
 		.eco {
-			padding: 40px 60px 40px 0;
+			padding: 40px 140px 40px 0;
 			background: url(../img/Eco__bg.png) no-repeat;
 			background-position: left;
+			// max-width: 1440px;
+			// margin: 0 auto;
 
 			.eco__content {
 				margin-left: auto;
@@ -919,6 +925,7 @@ $accent-color: #7eb693;
 		}
 		.map {
 			max-width: 1440px;
+			margin: 0 auto;
 
 			iframe {
 				width: 100%;
